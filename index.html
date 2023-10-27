@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Site para o iFood</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="bg-dark text-white text-center py-5">
+    <h1>Delícias à Porta: Peça sua Comida Favorita Agora!</h1>
+    <p>Conectando Restaurantes ao seu Paladar: Registre-se e Explore o iFood!</p>
+    <nav>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a class="btn btn-primary" href="#catalogo">Catálogo</a></li>
+            <li class="list-inline-item"><a class="btn btn-primary" href="#restaurantes">Restaurantes</a></li>
+            <li class="list-inline-item"><a class="btn btn-primary" href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section id="home" class="text-center my-5">
+        <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/5e7a3cc9360b10ec9c91c53aa768ab38" alt="Logo iFood" class="img-fluid">
+        <p class="mt-3">O jeito mais fácil de pedir delivery de comida e fazer mercado. Leia avaliações de restaurantes, faça seu pedido pela internet e receba em casa.</p>
+    </section>
+
+    <section id="catalogo" class="text-center my-5">
+        <h2>Catálogo Digital</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://www.receitasdemae.com.br/wp-content/uploads/2017/05/Galinhada.jpg" alt="Prato 1" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Galinhada</h3>
+                            <p class="card-text">Uma deliciosa galinhada com os melhores ingredientes da cidade e sabor indescrítivel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://s2.glbimg.com/aeVinaSS-WUdtRmdWJfGErP0mkA=/1200x/smart/filters:cover():strip_icc()/s.glbimg.com/po/rc/media/2012/06/13/15/27/43/914/feijoada.jpg" alt="Prato 2" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Feijoada</h3>
+                            <p class="card-text">Feijoada Completa: Um prato típico brasileiro que combina feijão preto, carne de porco, linguiça e temperos aromáticos, resultando em uma explosão de sabores autênticos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://img.cybercook.com.br/receitas/774/sopa-de-cebola-4.jpeg" alt="Prato 3" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Sopa de Cebola</h3>
+                            <p class="card-text">Sopa de cebola: Um caldo rico com cebolas caramelizadas, servido com queijo derretido e croutons dourados.
+
+                                Uma combinação perfeita de sabores e texturas para um deleite reconfortante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="restaurantes" class="text-center my-5">
+    <h2>Tabela de Restaurantes</h2>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Nota</th>
+                    <th>Breve Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bar do Sabor Brasileiro</td>
+                    <td>4.5</td>
+                    <td>Um autêntico bar que oferece uma variedade de pratos da culinária brasileira, desde feijoada até deliciosos petiscos de mandioca.</td>
+                </tr>
+                <tr>
+                    <td>Sabor Mineiro</td>
+                    <td>4.2</td>
+                    <td>Experimente a autêntica comida mineira neste restaurante acolhedor, onde o feijão tropeiro é o destaque do cardápio.</td>
+                </tr>
+                <tr>
+                    <td>Cozinha Nordestina</td>
+                    <td>4.7</td>
+                    <td>Descubra os sabores intensos e únicos da culinária nordestina brasileira, com pratos como acarajé e moqueca de peixe.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    <section id="contato" class="text-center my-5">
+        <h2>Formulário de Contato</h2>
+        <div class="container">
+            <form onsubmit="onSubmit()">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Entre em contato: exemplo@ifood.com | Telefone: (123) 456-7890</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function onSubmit () {
+            alert('Feedback enviado com sucesso!');
+        }
+    </script>
+
+</body>
+</html>
